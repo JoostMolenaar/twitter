@@ -24,4 +24,5 @@ CMD python3 -m robot_zoo
 RUN apk add tzdata
 ENV TZ=Europe/Amsterdam
 USER 999:999
+ENV TZ=Europe/Amsterdam
 COPY --from=build /app /app
